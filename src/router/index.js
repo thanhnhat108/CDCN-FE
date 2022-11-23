@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from  "../component/Home"
+import Register from "../component/Register";
+import Login from "../component/Login"
 import CategoryPage from '../component/CategoryPage'
+import ProductPage from "../component/ProductPage";
 import Container from "../component/Container";
 import SearchPage from "../component/SearchPage";
-
-
+import MyRating from "../component/MyRating"
 import Pay from "../component/Pay";
 
 Vue.use(VueRouter)
@@ -29,7 +31,7 @@ const routes = [
       {
         path:'/book',
         name:'product',
-        // component:ProductPage
+        component:ProductPage
       },
       {
         path:'/search',
@@ -41,67 +43,23 @@ const routes = [
   {
     path:'/login',
     name:'login',
-    // component:Login
+    component:Login
   },
   {
     path:'/register',
     name:'register',
-    // component:Register
-  },
-  {
-    path:'/user',
-    name:'user',
-    // component:Profile,
+    component:Register
   },
   {
     path:'/ratingbyuser',
     name:'ratingbyuser',
-    // component:MyRating,
+    component:MyRating,
   },
   {
     path:'/pay',
     name:'payment',
     component:Pay,
   },
-  {
-    path:'/admin/login',
-    name:'admin',
-    // component:AdminLogin
-  },
-  {
-    path: '/admin',
-    name: 'manage',
-    // component: Layout,
-    children: [
-      {
-        path: '/admin',
-        name: 'category_mng',
-        // component: Category
-      },
-      {
-        path: '/admin/product',
-        name: 'product_mng',
-        // component: Product
-      },
-      {
-        path: '/admin/rating',
-        name: 'rating_mng',
-        // component: Rating
-      },
-      {
-        path: '/admin/user',
-        name: 'user_mng',
-        // component: User
-      },
-    ]
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-  }
 ]
 
 const router = new VueRouter({
