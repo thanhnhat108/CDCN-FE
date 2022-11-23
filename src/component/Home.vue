@@ -60,11 +60,11 @@ export default {
       currentPage: 1,
       pagesize: 8,
       pics: [
-        { url: require("https://img4.thuthuatphanmem.vn/uploads/2020/12/26/anh-cuon-sach-mo-ra-trong-thu-vien_051456791.jpg") },
-        { url: require("https://img4.thuthuatphanmem.vn/uploads/2020/12/26/anh-cuon-sach-mo-ra-trong-thu-vien_051456791.jpg") },
-        { url: require("https://img4.thuthuatphanmem.vn/uploads/2020/12/26/anh-cuon-sach-mo-ra-trong-thu-vien_051456791.jpg") },
-        { url: require("https://img4.thuthuatphanmem.vn/uploads/2020/12/26/anh-cuon-sach-mo-ra-trong-thu-vien_051456791.jpg") },
-        { url: require("https://img4.thuthuatphanmem.vn/uploads/2020/12/26/anh-cuon-sach-mo-ra-trong-thu-vien_051456791.jpg") },
+        { url: require("../assets/carousel-1.jpg") },
+        { url: require("../assets/carousel-1.jpg") },
+        { url: require("../assets/carousel-1.jpg") },
+        { url: require("../assets/carousel-1.jpg") },
+        { url: require("../assets/carousel-1.jpg") },
       ],
     };
   },
