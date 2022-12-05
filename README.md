@@ -1,7 +1,8 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+## Chuyên đề công nghệ
+- Lớp: 19N12
+- Nhóm 11
+- Thành viên:
+    + Trần Thanh Nhật - 102190131
+    + Đỗ Phú Vũ - 102190149
+    + Vũ Đức Phương - 102190034
+    + Nguyễn Hữu Hồng Phúc - 102190133
