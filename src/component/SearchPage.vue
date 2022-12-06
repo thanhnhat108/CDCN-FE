@@ -42,6 +42,7 @@
           :page-size="pagesize"
           layout="total, sizes, prev, pager, next, jumper"
           :total="total"
+          align="center"
         >
         </el-pagination>
       </div>
