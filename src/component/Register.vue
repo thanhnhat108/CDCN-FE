@@ -19,7 +19,7 @@
       </el-form-item>
       <el-form-item prop="password">
         <el-input
-          type="text"
+          type="password"
           v-model="user.password"
           auto-complete="off"
           placeholder="your password"
