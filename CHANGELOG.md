@@ -1,3 +1,19 @@
+# v2.0.0 20221214
+* fix ui grid
+[PR#23] (https://github.com/thanhnhat108/CDCN-FE/pull/23)
+
+* add more router
+[PR#22] (https://github.com/thanhnhat108/CDCN-FE/pull/22)
+
+* add admin manage rating
+[PR#20] (https://github.com/thanhnhat108/CDCN-FE/pull/20)
+
+* Add Admin Product
+[PR#19] (https://github.com/thanhnhat108/CDCN-FE/pull/19)
+
+* Add Admin Manage User
+[PR#18] (https://github.com/thanhnhat108/CDCN-FE/pull/18)
+
 # v1.0.1 20221204
 * add jenkinfile
 [PR#16] (https://github.com/thanhnhat108/CDCN-FE/pull/16)
