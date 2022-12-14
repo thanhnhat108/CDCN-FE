@@ -1,3 +1,7 @@
+# v1.0.1 20221204
+* add jenkinfile
+[PR#16] (https://github.com/thanhnhat108/CDCN-FE/pull/16)
+
 # v1.0.0 - 202201123
 * modify router
 [PR#12](https://github.com/thanhnhat108/CDCN-FE/pull/12)
