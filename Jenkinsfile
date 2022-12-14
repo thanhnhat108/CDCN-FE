@@ -1,31 +1,15 @@
 pipeline {
-    agent {
-        node {
-            label 'jenkins-agent-goes-here'
-        }
-    }
-
-    triggers {
-        pollSCM '* * * * *'
-    }
+    agent any
 
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh ''' 
-                cd CDCN-FE
-                yarn install
-                '''
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh ''' 
-                cd CDCN-FE
-                yarn serve
-                '''
             }
         }
         stage('Deploy') {

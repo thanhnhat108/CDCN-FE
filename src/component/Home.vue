@@ -1,6 +1,24 @@
 <template>
   <div>
     <div>
+      <el-carousel height="600px" indicator-position="outside">
+        <el-carousel-item v-for="item in pics" :key="item.url">
+          <img :src="item.url" width="2000" height="800" />
+        </el-carousel-item>
+      </el-carousel>
+    </div>
+    <div>
+      <nav-bar />
+    </div>
+    <div>
+      <!-- <el-row :gutter="20">
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      </el-row> -->
+    </div>
+    <div>
       <el-alert v-if="beans == ''" title="nothing" type="error"> </el-alert>
       <el-row
         style="text-align: center; margin-left: 10%; margin-right: 10%"
@@ -13,12 +31,12 @@
           )"
           :key="item.id"
           :span="6"
-          style="margin-top: 30px"
+          style="margin: 30px 0"
         >
           <div class="grid-content">
             <el-card
               :body-style="{ padding: '0px' }"
-              style="width: 195px"
+              style="width: 195px ; height:320px;"
               shadow="hover"
               @click.native="handleSkip(item.id)"
             >
@@ -32,7 +50,7 @@
           </div>
         </el-col>
       </el-row>
-      <div class="block" span="6" gutter="10" align="middle">
+      <div class="block" span="6" gutter="10" align="center">
         <!-- <span class="demonstration">All combined</span> -->
         <el-pagination
           @size-change="handleSizeChange"
@@ -42,6 +60,7 @@
           :page-size="pagesize"
           layout="total, sizes, prev, pager, next, jumper"
           :total="total"
+          align="center"
         >
         </el-pagination>
       </div>
@@ -61,10 +80,10 @@ export default {
       pagesize: 8,
       pics: [
         { url: require("../assets/carousel-1.jpg") },
-        { url: require("../assets/carousel-1.jpg") },
-        { url: require("../assets/carousel-1.jpg") },
-        { url: require("../assets/carousel-1.jpg") },
-        { url: require("../assets/carousel-1.jpg") },
+        { url: require("../assets/carousel-2.jpg") },
+        { url: require("../assets/carousel-3.jpg") },
+        { url: require("../assets/carousel-4.jpg") },
+        { url: require("../assets/carousel-5.jpg") },
       ],
     };
   },
@@ -78,8 +97,7 @@ export default {
     getCategory() {
       try {
         let url =
-          "http://localhost:8000/recommend/" +
-          JSON.parse(sessionStorage.user).id;
+          "http://localhost:8000/recommend/" + JSON.parse(sessionStorage.user).id;
         this.axios.get(url).then((response) => {
           // eslint-disable-next-line no-console
           console.log(response);
@@ -102,9 +120,10 @@ export default {
     },
     refresh() {
       try {
+        // this.dataRecommend = sessionStorage.getItem(JSON.parse("RecommendBook"))
+        // this.total = this.dataRecommend.length
         let url =
-          "http://localhost:8000/recommend/" +
-          JSON.parse(sessionStorage.user).id;
+          "http://localhost:8000/recommend/" + JSON.parse(sessionStorage.user).id;
         this.axios.get(url).then((response) => {
           // eslint-disable-next-line no-console
           // console.log(response);

@@ -18,7 +18,7 @@
           <div class="grid-content">
             <el-card
               :body-style="{ padding: '0px' }"
-              style="width: 195px"
+              style="width: 210px; height: 320px;"
               shadow="hover"
               @click.native="handleSkip(item.id)"
             >
@@ -42,6 +42,7 @@
           :page-size="pagesize"
           layout="total, sizes, prev, pager, next, jumper"
           :total="total"
+          align="center"
         >
         </el-pagination>
       </div>
