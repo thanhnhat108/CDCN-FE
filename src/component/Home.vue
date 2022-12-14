@@ -31,12 +31,12 @@
           )"
           :key="item.id"
           :span="6"
-          style="margin-top: 30px"
+          style="margin: 30px 0"
         >
           <div class="grid-content">
             <el-card
               :body-style="{ padding: '0px' }"
-              style="width: 195px"
+              style="width: 195px ; height:320px;"
               shadow="hover"
               @click.native="handleSkip(item.id)"
             >
